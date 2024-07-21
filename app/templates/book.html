@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Book Tour{% endblock %}
+
+{% block content %}
+<h2>Book Tour: {{ tour.name }}</h2>
+<form method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Book</button>
+</form>
+{% endblock %}
